@@ -3,6 +3,10 @@
   "name": "ci-cd-kata",
   "version": "1.0.0",
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "10.13.0"
   }
 }
