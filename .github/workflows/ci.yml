@@ -28,3 +28,12 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: Create ZIP artifact
+        run: zip app.zip app.js package.json
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-cd-kata-artifact
+          path: app.zip
